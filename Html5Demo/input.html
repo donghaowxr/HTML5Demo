@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function value_change(){
+            var number=document.getElementById("Range").value;
+            document.getElementById("Output").value=number;
+        }
+
+        function check(){
+            var email=document.getElementById("email");
+            if(email.value==""){
+                alert("请输入email");
+                return false;
+            }
+            else if(!email.checkValidity()){
+                alert("请输入正确的email");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="datetime-local" name="datetime-local" value="">
+    <br>
+    <input type="color" onchange="document.body.style.backgroundColor=document.getElementById('currentcolor').textContent=this.value">
+    <span id="currentcolor"></span>
+
+    <br>
+    <input id="Range" type="range" min="0" max="100" value="10"step="2" onchange="value_change()">
+    <output id="Output">10</output>
+
+    <form id="testform" onsubmit="" novalidate="true">
+        <label for="email">邮箱</label>
+        <input id="email" type="email">
+        <input type="submit" value="提交" onclick="check()">
+    </form>
+</body>
+</html>

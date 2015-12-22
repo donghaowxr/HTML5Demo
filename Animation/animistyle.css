@@ -1,0 +1,32 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation: anim 5s infinite alternate;
+    -o-animation: anim 5s infinite alternate;
+    animation: anim 5s infinite alternate;
+}
+
+@keyframes anim {
+    0%{background-color: red;left: 0px;
+        top: 0px;}
+    25%{background-color: blue;left: 200px;top: 0px;}
+    50%{background-color: #ccffcc;left: 200px;
+        top: 200px;}
+    75%{background-color: #00ffff;left: 0px;
+        top: 200px;}
+    100%{background-color: red;left: 0px;
+        top: 0px;}
+}
+@-webkit-keyframes anim {
+            0%{background-color: red;left: 0px;
+                top: 0px;}
+            25%{background-color: blue;left: 200px;top: 0px;}
+            50%{background-color: #ccffcc;left: 200px;
+                top: 200px;}
+            75%{background-color: #00ffff;left: 0px;
+                top: 200px;}
+            100%{background-color: red;left: 0px;
+                top: 0px;}
+        }

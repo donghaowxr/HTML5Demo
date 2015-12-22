@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function show(){
+            var txtName=document.getElementById("txt_name");
+            var btn=document.getElementById("btnvalidate");
+            var frm=document.getElementById("form_test");
+            if(txtName.value.trim()==""){
+                var label=document.createElement("label");
+                label.setAttribute("for","txt_name");
+                frm.insertBefore(label,btn);
+                txtName.labels[1].innerHTML="请输入姓名";
+                txtName.labels[1].setAttribute("style","color:red");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="form_test">
+        <label id="label" for="txt_name">姓名:</label>
+        <input id="txt_name"/>
+        <input type="button" id="btnvalidate" value="提交" onclick="show()"/>
+    </form>
+</body>
+</html>

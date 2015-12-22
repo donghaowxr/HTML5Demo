@@ -1,0 +1,21 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+/*.div2{*/
+    /*transform: translate(100px,100px);/!*常规写法*!/*/
+    /*-webkit-transform:translate(100px,100px);/!*这是safari和chorme支持的方式*!/*/
+    /*-ms-transform: translate(100px,100px);/!*支持ie*!/*/
+    /*-o-transform: translate(100px,100px);/!*支持opera*!/*/
+    /*-moz-transform: translate(100px,100px);/!*支持firefox*!/*/
+/*}*/
+
+.div2{
+    transform: rotate(200deg);
+    -webkit-transform:rotate(200deg);/*这是safari和chorme支持的方式*/
+    -ms-transform: rotate(200deg);/*支持ie*/
+    -o-transform: rotate(200deg);/*支持opera*/
+    -moz-transform: rotate(200deg);/*支持firefox*/
+}

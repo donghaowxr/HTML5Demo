@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+    background-color: burlywood;
+    width: 250px;
+    text-align: center;
+}
+a:link,a:visited{
+    text-decoration: none;
+    background-color: burlywood;
+    color: aliceblue;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+a:hover,a:active{
+    background-color: red;
+}
+li{
+    display: inline;
+    padding: 3px 5px;
+}

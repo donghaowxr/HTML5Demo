@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function btn(){
+            var i=0;
+            function thread_one(){
+                if(i<100){
+                    i++;
+                    updateprogress(i);
+                }
+            }
+            setInterval(thread_one,100);
+        }
+        function updateprogress(newValue){
+            var progressbar=document.getElementById("p");
+            progressbar.value=newValue;
+            progressbar.getElementsByTagName("span")[0].textContent=newValue;
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <h2>progress使用</h2>
+        <p><progress id="p" max="100" style="background-color: brown"><span>0</span>%</progress> </p>
+        <input type="button" value="加载" onclick="btn()">
+    </section>
+
+    <meter value="40" min="0" max="100" low="10" high="90" optimum="80"></meter>
+</body>
+</html>
