@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>对话框控件</title>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link href="jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <script>
+        $(function(){
+            $("#btn").button().on("click",function(){
+                $("#div").dialog();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="div">
+        <p>这是一个对话框Dialog</p>
+    </div>
+    <a href="#" id="btn">按钮</a>
+</body>
+</html>
