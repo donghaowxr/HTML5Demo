@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>菜单控件</title>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="menu.js"></script>
+    <link href="jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <style>
+        /*#menu{*/
+            /*width: 150px;*/
+        /*}*/
+        .ui-menu:after{
+            content:".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+        .ui-menu .ui-menu-item{
+            display: inline-block;
+            float: left;
+            margin: 0;
+            padding: 10px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li>
+            <a href="#">java</a>
+            <ul>
+                <li><a href="#">java ee</a></li>
+                <li><a href="#">java se</a></li>
+                <li><a href="#">java me</a></li>
+            </ul>
+        </li>
+        <li>c</li>
+        <li>c++</li>
+        <li>php</li>
+    </ul>
+</body>
+</html>
