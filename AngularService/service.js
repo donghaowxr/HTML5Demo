@@ -1,0 +1,29 @@
+/**
+ * Created by donghao on 15/12/27.
+ */
+angular.module('app',[])
+.value('realname','zhaoliu')//value的值可以改变
+.constant('http','www.baidu.com')//常量的值不能改变
+.factory('Data',function(){
+        return{
+            msg:"你好啊",
+            setMsg:function(){
+                this.msg="我不好";
+            }
+        }
+    })
+    .service('User',function(){
+        this.firstname="上官";
+        this.lastname="飞燕";
+        this.getName=function(){
+            return this.firstname+this.lastname;
+        }
+    })
+.controller("MyCtrl",function($scope,realname,http,Data,User){
+        $scope.msg="你好";
+        $scope.realname=realname;
+        $scope.http=http;
+        $scope.Data=Data;
+        Data.setMsg();
+        $scope.uname=User.getName();
+    })
