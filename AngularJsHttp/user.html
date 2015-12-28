@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="foundation.min.css" type="text/css"/>
+</head>
+<body style="padding: 10px;" ng-app="app">
+    <div ng-controller="MyCtrl">
+        <fieldset>
+            <legend>用户角色</legend>
+            <select>
+                <option value="1">系统管理员</option>
+                <option value="2">角色管理</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>权限列表</legend>
+            <span>
+                <input type="checkbox"/>&nbsp;人员管理
+            </span>
+            <span>
+                <input type="checkbox"/>&nbsp;合同管理
+            </span>
+            <span>
+                <input type="checkbox"/>&nbsp;项目管理
+            </span>
+            <span>
+                <input type="checkbox"/>&nbsp;新闻公告
+            </span>
+        </fieldset>
+    </div>
+</body>
+<script src="angular.min.js"></script>
+<script src="user.js"></script>
+</html>
